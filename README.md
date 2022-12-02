@@ -7,17 +7,20 @@ In iOS there is a copy tool screenshots in the markup tool, this is missing on m
 # How to build
 This project has no external dependencies, so everything is neatly contained in the folder, just follow the step by step guide.
 Run the following in the terminal:
+
 1. `git@github.com:BastianInuk/Clipper.git`
 2. `cd Clipper`
 3. `open .`
 
 The last command should open finde in the root folder of Clipper. 
-4. Open the Xcode project (`Clipper.xcodeproj`)
+
+1. Open the Xcode project (`Clipper.xcodeproj`)
 
 Now that you're in Xcode, you can start tinker with the code, but before this, it's probably a good idea to run the project first. To just compile I recommend.
-5. In middle bar where it says "Clipper" select copy image
-6. Press the play button in the upper left corner
-7. Select Safari (or any other app)
+
+1. In middle bar where it says "Clipper" select copy image
+2. Press the play button in the upper left corner
+3. Select Safari (or any other app)
 
 Now that you have the program compiled and running, you can take as many screenshots as you want, in the share extension you should be able to see "Copy Image" now.
 
