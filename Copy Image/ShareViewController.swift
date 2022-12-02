@@ -19,26 +19,23 @@ class ShareViewController: NSViewController {
 
     override func loadView() {
         super.loadView()
-    
-        // Insert code here to customize the view
-        let item = self.extensionContext!.inputItems[0] as! NSExtensionItem
-        guard let attachments = item.attachments else {
-            NSLog("No Attachments")
-            return
-        }
-        let imageType = "public.image"
-        NSLog("Attachments = %@", attachments as NSArray)
-        guard let first = attachments.first,
-              first.registeredTypeIdentifiers.contains(imageType) else {
-            
-            return
-        }
-        
         Task {
+            let item = self.extensionContext!.inputItems[0] as! NSExtensionItem
+            guard let attachments = item.attachments else {
+                NSLog("No Attachments")
+                return
+            }
+            let imageType = "public.image"
+            NSLog("Attachments = %@", attachments as NSArray)
+            guard let first = attachments.first,
+                  first.registeredTypeIdentifiers.contains(imageType) else {
+                
+                return
+            }
+            
             do {
                 let image = try await first.loadItem(forTypeIdentifier: imageType)
-                if let nsImage = image as? NSImage,
-                   let cg = nsImage.cgImage(forProposedRect: nil, context: nil, hints: nil) {
+                if let nsImage = image as? NSImage {
                     imageView?.image = nsImage
                     
                     self.data = nsImage.tiffRepresentation;
@@ -46,21 +43,6 @@ class ShareViewController: NSViewController {
             } catch {
                 print (error)
             }
-            /*
-            guard let data = try? Data(contentsOf: url) else {
-                print(url.absoluteString)
-                let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSFileReadUnknownError, userInfo: nil)
-                self.extensionContext!.cancelRequest(withError: cancelError)
-                return
-            }
-            */
-/*
-
-      */
-            
-            
-            
-            //self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
         }
     }
 
