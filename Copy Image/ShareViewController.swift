@@ -20,38 +20,23 @@ class ShareViewController: NSViewController {
     override func loadView() {
         super.loadView()
         Task {
-            let item = self.extensionContext!.inputItems[0] as! NSExtensionItem
-            guard let attachments = item.attachments else {
-                NSLog("No Attachments")
-                return
-            }
             let imageType = "public.image"
-            NSLog("Attachments = %@", attachments as NSArray)
-            guard let first = attachments.first,
-                  first.registeredTypeIdentifiers.contains(imageType) else {
-                
+            guard let item = self.extensionContext?.inputItems[0] as? NSExtensionItem,
+                  let attachments = item.attachments,
+                  let first = attachments.first,
+                  first.registeredTypeIdentifiers.contains(imageType),
+                  let image = try? await first.loadItem(forTypeIdentifier: imageType),
+                  let nsImage = image as? NSImage else
+            {
                 return
             }
             
-            do {
-                let image = try await first.loadItem(forTypeIdentifier: imageType)
-                if let nsImage = image as? NSImage {
-                    imageView?.image = nsImage
-                    
-                    self.data = nsImage.tiffRepresentation;
-                }
-            } catch {
-                print (error)
-            }
+            self.data = nsImage.tiffRepresentation
+            imageView?.image = nsImage
         }
     }
 
     @IBAction func send(_ sender: AnyObject?) {
-        let outputItem = NSExtensionItem()
-        // Complete implementation by setting the appropriate value on the output item
-    
-        let outputItems = [outputItem]
-        
         if let data = data {
             let pasteType = NSPasteboard.PasteboardType.tiff
             NSPasteboard.general.declareTypes([pasteType], owner: nil)
