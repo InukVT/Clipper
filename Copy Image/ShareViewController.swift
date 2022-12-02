@@ -28,6 +28,9 @@ class ShareViewController: NSViewController {
                   let image = try? await first.loadItem(forTypeIdentifier: imageType),
                   let nsImage = image as? NSImage else
             {
+                // TODO: Better handling
+                let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSFileReadUnknownError, userInfo: nil)
+                self.extensionContext!.cancelRequest(withError: cancelError)
                 return
             }
             
@@ -44,7 +47,7 @@ class ShareViewController: NSViewController {
         }
         
         self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
-}
+    }
 
     @IBAction func cancel(_ sender: AnyObject?) {
         let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSUserCancelledError, userInfo: nil)
