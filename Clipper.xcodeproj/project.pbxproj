@@ -16,16 +16,10 @@
 		FCFCD1BD293A9EA1000A5232 /* ClipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFCD1BC293A9EA1000A5232 /* ClipperTests.swift */; };
 		FCFCD1C7293A9EA1000A5232 /* ClipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFCD1C6293A9EA1000A5232 /* ClipperUITests.swift */; };
 		FCFCD1C9293A9EA1000A5232 /* ClipperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFCD1C8293A9EA1000A5232 /* ClipperUITestsLaunchTests.swift */; };
-		FCFCD1DC293A9EB4000A5232 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCFCD1DB293A9EB4000A5232 /* Media.xcassets */; };
-		FCFCD1DE293A9EB4000A5232 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FCFCD1DD293A9EB4000A5232 /* icon.icns */; };
-		FCFCD1E0293A9EB4000A5232 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFCD1DF293A9EB4000A5232 /* ActionViewController.swift */; };
-		FCFCD1E3293A9EB4000A5232 /* ActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFCD1E1293A9EB4000A5232 /* ActionViewController.xib */; };
-		FCFCD1E8293A9EB4000A5232 /* Copy.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FCFCD1D9293A9EB4000A5232 /* Copy.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FCFCD1F4293A9F18000A5232 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FCFCD1F3293A9F18000A5232 /* icon.icns */; };
 		FCFCD1F6293A9F18000A5232 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFCD1F5293A9F18000A5232 /* ShareViewController.swift */; };
 		FCFCD1F9293A9F18000A5232 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFCD1F7293A9F18000A5232 /* ShareViewController.xib */; };
 		FCFCD1FE293A9F18000A5232 /* Copy Image.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FCFCD1F1293A9F18000A5232 /* Copy Image.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FCFCD209293AB91A000A5232 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFCD208293AB91A000A5232 /* UniformTypeIdentifiers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = FCFCD1A1293A9EA0000A5232;
 			remoteInfo = Clipper;
-		};
-		FCFCD1E6293A9EB4000A5232 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FCFCD19A293A9EA0000A5232 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FCFCD1D8293A9EB4000A5232;
-			remoteInfo = Copy;
 		};
 		FCFCD1FC293A9F18000A5232 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -67,7 +54,6 @@
 			dstSubfolderSpec = 13;
 			files = (
 				FCFCD1FE293A9F18000A5232 /* Copy Image.appex in Embed Foundation Extensions */,
-				FCFCD1E8293A9EB4000A5232 /* Copy.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,20 +74,12 @@
 		FCFCD1C2293A9EA1000A5232 /* ClipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFCD1C6293A9EA1000A5232 /* ClipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipperUITests.swift; sourceTree = "<group>"; };
 		FCFCD1C8293A9EA1000A5232 /* ClipperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipperUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FCFCD1D9293A9EB4000A5232 /* Copy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Copy.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCFCD1DB293A9EB4000A5232 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		FCFCD1DD293A9EB4000A5232 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
-		FCFCD1DF293A9EB4000A5232 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		FCFCD1E2293A9EB4000A5232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ActionViewController.xib; sourceTree = "<group>"; };
-		FCFCD1E4293A9EB4000A5232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCFCD1E5293A9EB4000A5232 /* Copy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Copy.entitlements; sourceTree = "<group>"; };
 		FCFCD1F1293A9F18000A5232 /* Copy Image.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Copy Image.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFCD1F3293A9F18000A5232 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		FCFCD1F5293A9F18000A5232 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		FCFCD1F8293A9F18000A5232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		FCFCD1FA293A9F18000A5232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCFCD1FB293A9F18000A5232 /* Copy_Image.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Copy_Image.entitlements; sourceTree = "<group>"; };
-		FCFCD206293AB91A000A5232 /* iOS Copy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS Copy.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFCD208293AB91A000A5232 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -127,25 +105,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCFCD1D6293A9EB4000A5232 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FCFCD1EE293A9F18000A5232 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCFCD203293AB91A000A5232 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FCFCD209293AB91A000A5232 /* UniformTypeIdentifiers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +121,6 @@
 				FCFCD1A4293A9EA0000A5232 /* Clipper */,
 				FCFCD1BB293A9EA1000A5232 /* ClipperTests */,
 				FCFCD1C5293A9EA1000A5232 /* ClipperUITests */,
-				FCFCD1DA293A9EB4000A5232 /* Copy */,
 				FCFCD1F2293A9F18000A5232 /* Copy Image */,
 				FCFCD207293AB91A000A5232 /* Frameworks */,
 				FCFCD1A3293A9EA0000A5232 /* Products */,
@@ -171,9 +133,7 @@
 				FCFCD1A2293A9EA0000A5232 /* Clipper.app */,
 				FCFCD1B8293A9EA1000A5232 /* ClipperTests.xctest */,
 				FCFCD1C2293A9EA1000A5232 /* ClipperUITests.xctest */,
-				FCFCD1D9293A9EB4000A5232 /* Copy.appex */,
 				FCFCD1F1293A9F18000A5232 /* Copy Image.appex */,
-				FCFCD206293AB91A000A5232 /* iOS Copy.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,19 +177,6 @@
 			path = ClipperUITests;
 			sourceTree = "<group>";
 		};
-		FCFCD1DA293A9EB4000A5232 /* Copy */ = {
-			isa = PBXGroup;
-			children = (
-				FCFCD1DB293A9EB4000A5232 /* Media.xcassets */,
-				FCFCD1DD293A9EB4000A5232 /* icon.icns */,
-				FCFCD1DF293A9EB4000A5232 /* ActionViewController.swift */,
-				FCFCD1E1293A9EB4000A5232 /* ActionViewController.xib */,
-				FCFCD1E4293A9EB4000A5232 /* Info.plist */,
-				FCFCD1E5293A9EB4000A5232 /* Copy.entitlements */,
-			);
-			path = Copy;
-			sourceTree = "<group>";
-		};
 		FCFCD1F2293A9F18000A5232 /* Copy Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,7 +212,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FCFCD1E7293A9EB4000A5232 /* PBXTargetDependency */,
 				FCFCD1FD293A9F18000A5232 /* PBXTargetDependency */,
 			);
 			name = Clipper;
@@ -309,23 +255,6 @@
 			productReference = FCFCD1C2293A9EA1000A5232 /* ClipperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		FCFCD1D8293A9EB4000A5232 /* Copy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FCFCD1E9293A9EB4000A5232 /* Build configuration list for PBXNativeTarget "Copy" */;
-			buildPhases = (
-				FCFCD1D5293A9EB4000A5232 /* Sources */,
-				FCFCD1D6293A9EB4000A5232 /* Frameworks */,
-				FCFCD1D7293A9EB4000A5232 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Copy;
-			productName = Copy;
-			productReference = FCFCD1D9293A9EB4000A5232 /* Copy.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		FCFCD1F0293A9F18000A5232 /* Copy Image */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCFCD1FF293A9F18000A5232 /* Build configuration list for PBXNativeTarget "Copy Image" */;
@@ -341,23 +270,6 @@
 			name = "Copy Image";
 			productName = "Copy Image";
 			productReference = FCFCD1F1293A9F18000A5232 /* Copy Image.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		FCFCD205293AB91A000A5232 /* iOS Copy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FCFCD213293AB91A000A5232 /* Build configuration list for PBXNativeTarget "iOS Copy" */;
-			buildPhases = (
-				FCFCD202293AB91A000A5232 /* Sources */,
-				FCFCD203293AB91A000A5232 /* Frameworks */,
-				FCFCD204293AB91A000A5232 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "iOS Copy";
-			productName = "iOS Copy";
-			productReference = FCFCD206293AB91A000A5232 /* iOS Copy.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -381,13 +293,7 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = FCFCD1A1293A9EA0000A5232;
 					};
-					FCFCD1D8293A9EB4000A5232 = {
-						CreatedOnToolsVersion = 14.1;
-					};
 					FCFCD1F0293A9F18000A5232 = {
-						CreatedOnToolsVersion = 14.1;
-					};
-					FCFCD205293AB91A000A5232 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -408,9 +314,7 @@
 				FCFCD1A1293A9EA0000A5232 /* Clipper */,
 				FCFCD1B7293A9EA1000A5232 /* ClipperTests */,
 				FCFCD1C1293A9EA1000A5232 /* ClipperUITests */,
-				FCFCD1D8293A9EB4000A5232 /* Copy */,
 				FCFCD1F0293A9F18000A5232 /* Copy Image */,
-				FCFCD205293AB91A000A5232 /* iOS Copy */,
 			);
 		};
 /* End PBXProject section */
@@ -439,29 +343,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCFCD1D7293A9EB4000A5232 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FCFCD1DC293A9EB4000A5232 /* Media.xcassets in Resources */,
-				FCFCD1DE293A9EB4000A5232 /* icon.icns in Resources */,
-				FCFCD1E3293A9EB4000A5232 /* ActionViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FCFCD1EF293A9F18000A5232 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FCFCD1F9293A9F18000A5232 /* ShareViewController.xib in Resources */,
 				FCFCD1F4293A9F18000A5232 /* icon.icns in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCFCD204293AB91A000A5232 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,26 +383,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCFCD1D5293A9EB4000A5232 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FCFCD1E0293A9EB4000A5232 /* ActionViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FCFCD1ED293A9F18000A5232 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FCFCD1F6293A9F18000A5232 /* ShareViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCFCD202293AB91A000A5232 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,11 +404,6 @@
 			target = FCFCD1A1293A9EA0000A5232 /* Clipper */;
 			targetProxy = FCFCD1C3293A9EA1000A5232 /* PBXContainerItemProxy */;
 		};
-		FCFCD1E7293A9EB4000A5232 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FCFCD1D8293A9EB4000A5232 /* Copy */;
-			targetProxy = FCFCD1E6293A9EB4000A5232 /* PBXContainerItemProxy */;
-		};
 		FCFCD1FD293A9F18000A5232 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FCFCD1F0293A9F18000A5232 /* Copy Image */;
@@ -545,14 +412,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FCFCD1E1293A9EB4000A5232 /* ActionViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCFCD1E2293A9EB4000A5232 /* Base */,
-			);
-			name = ActionViewController.xib;
-			sourceTree = "<group>";
-		};
 		FCFCD1F7293A9F18000A5232 /* ShareViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -805,60 +664,6 @@
 			};
 			name = Release;
 		};
-		FCFCD1EA293A9EB4000A5232 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Copy/Copy.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S64A8TJ7UP;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Copy/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Copy;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = blog.inuk.Clipper.Copy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		FCFCD1EB293A9EB4000A5232 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Copy/Copy.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S64A8TJ7UP;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Copy/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Copy;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = blog.inuk.Clipper.Copy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		FCFCD200293A9F18000A5232 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -913,61 +718,6 @@
 			};
 			name = Release;
 		};
-		FCFCD214293AB91A000A5232 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S64A8TJ7UP;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS Copy/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "iOS Copy";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "blog.inuk.iOS-Copy";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FCFCD215293AB91A000A5232 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S64A8TJ7UP;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS Copy/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "iOS Copy";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "blog.inuk.iOS-Copy";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1007,29 +757,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCFCD1E9293A9EB4000A5232 /* Build configuration list for PBXNativeTarget "Copy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FCFCD1EA293A9EB4000A5232 /* Debug */,
-				FCFCD1EB293A9EB4000A5232 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FCFCD1FF293A9F18000A5232 /* Build configuration list for PBXNativeTarget "Copy Image" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCFCD200293A9F18000A5232 /* Debug */,
 				FCFCD201293A9F18000A5232 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FCFCD213293AB91A000A5232 /* Build configuration list for PBXNativeTarget "iOS Copy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FCFCD214293AB91A000A5232 /* Debug */,
-				FCFCD215293AB91A000A5232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
