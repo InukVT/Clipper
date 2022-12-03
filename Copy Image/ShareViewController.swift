@@ -40,13 +40,17 @@ class ShareViewController: NSViewController {
     }
 
     @IBAction func send(_ sender: AnyObject?) {
-        if let data = data {
-            let pasteType = NSPasteboard.PasteboardType.tiff
-            NSPasteboard.general.declareTypes([pasteType], owner: nil)
-            assert( NSPasteboard.general.setData(data, forType: pasteType), "Error!")
+        defer {
+            self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
         }
         
-        self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
+        guard let data = data else {
+            return
+        }
+        
+        let pasteType = NSPasteboard.PasteboardType.tiff
+        NSPasteboard.general.declareTypes([pasteType], owner: nil)
+        assert( NSPasteboard.general.setData(data, forType: pasteType), "Error!")
     }
 
     @IBAction func cancel(_ sender: AnyObject?) {
